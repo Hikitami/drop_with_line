@@ -2,20 +2,20 @@
 function defaultPreset() {
     const cookieInfo = JSON.stringify({
         'a1': {
-            img: '/image/1.svg',
+            img: './image/1.svg',
             title: 'Первый документ',
             subField: [{ title: "добавленное поле", value: "1" }]
         },
         'a2': {
-            img: '/image/2.svg',
+            img: './image/2.svg',
             title: 'Второй документ',
         },
         'a3': {
-            img: '/image/3.svg',
+            img: './image/3.svg',
             title: 'Третий документ',
         },
         'a4': {
-            img: '/image/4.svg',
+            img: './image/4.svg',
             title: 'Четвертый документ',
         },
     });
