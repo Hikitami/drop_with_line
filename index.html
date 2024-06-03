@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="bar">
+            <div class="bar__wrapper">
+                <button class="bar__add">Добавить объект</button>
+                <div class="bar__list"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content__wrapper">
+                <div class="content__block">
+                    <canvas id="content_canvas" width="0px" height="0px"></canvas>
+                </div>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="popup__wrapper">
+                <div class="popup__block">
+                    <form class="popup__form" action="#">
+                        <div class="popup__content">
+                            <div class="popup__input-wrapper">
+                                <div class="popup__input-title">
+                                    Заголовок
+                                </div>
+                                <input name="title" placeholder="Введите заголовок" type="text" class="popup__input">
+                            </div>
+                            <div class="popup__input-wrapper">
+                                <div class="popup__input-title">
+                                    Ссылка на картинку
+                                </div>
+                                <input name="img"
+                                    placeholder="Есть 4 дефолтные картинки в папке (/image/1.svg и так до 4)"
+                                    type="text" class="popup__input">
+                            </div>
+                        </div>
+                        <button class="popup__btn" type="submit">Добавить объект</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="detail-popup">
+            <div class="detail-popup__wrapper">
+                <div class="detail-popup__block">
+                    <form class="detail-popup__form" action="#">
+                        <div class="detail-popup__content">
+                        </div>
+                        <div class="detail-popup__add-field-wrapper">
+                            <div class="detail-popup__add-field-title">
+                                Название дополнительного поля
+                            </div>
+                            <input class="detail-popup__add-field" name="add-field" type="text">
+                            <button class="detail-popup__add-field-btn" type="button">
+                                Добавить
+                            </button>
+                        </div>
+                        <button class="detail-popup__btn" type="submit">Добавить в объект</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
