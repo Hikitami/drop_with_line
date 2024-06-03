@@ -562,32 +562,20 @@ window.addEventListener('DOMContentLoaded', () => {
 
         const formData = new FormData(formDetail);
 
-        if (barInfo[id].subField) {
-            const { subField } = barInfo[id];
+        const { subField } = barInfo[id];
 
-            formData.forEach((value, key) => {
-                const checkField = subField.find((el) => el.title != key);
-                if (!checkField && key != 'add-field' && value != '') {
-                    const field = {
-                        title: key,
-                        value: value
-                    }
-
-                    barInfo[id].subField.length ? barInfo[id].subField.push(field) : barInfo[id].subField = [field]
+        formData.forEach((value, key) => {
+            const checkField = subField?.find((el) => el.title == key);
+            if (!checkField && key != 'add-field' && value != '') {
+                const field = {
+                    title: key,
+                    value: value
                 }
-            });
-        } else {
-            formData.forEach((value, key) => {
-                if (key != 'add-field' && value != '') {
-                    const field = {
-                        title: key,
-                        value: value
-                    }
 
-                    barInfo[id].subField ? barInfo[id].subField.push(field) : barInfo[id].subField = [field]
-                }
-            });
-        }
+                barInfo[id].subField ? barInfo[id].subField.push(field) : barInfo[id].subField = [field]
+            }
+        });
+
 
         createSubInfo(id, barInfo[id]);
 
