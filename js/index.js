@@ -2,20 +2,20 @@
 function defaultPreset() {
     const cookieInfo = JSON.stringify({
         'a1': {
-            img: 'https://img2.freepng.ru/20181123/jco/kisspng-scalable-vector-graphics-g-suite-computer-icons-go-5bf7e7dd3349c9.5370207215429734052101.jpg',
+            img: './image/1.svg',
             title: 'Первый документ',
             subField: [{ title: "добавленное поле", value: "1" }]
         },
         'a2': {
-            img: 'https://c0.klipartz.com/pngpicture/578/909/gratis-png-yandex.png',
+            img: './image/2.svg',
             title: 'Второй документ',
         },
         'a3': {
-            img: 'https://img2.freepng.ru/20181123/jco/kisspng-scalable-vector-graphics-g-suite-computer-icons-go-5bf7e7dd3349c9.5370207215429734052101.jpg',
+            img: './image/3.svg',
             title: 'Третий документ',
         },
         'a4': {
-            img: 'https://c0.klipartz.com/pngpicture/578/909/gratis-png-yandex.png',
+            img: './image/4.svg',
             title: 'Четвертый документ',
         },
     });
